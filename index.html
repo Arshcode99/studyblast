@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Schedule</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      background-color: #f8f9fa;
+      padding: 20px;
+      width: 100vw;
+      height: auto;
+      overflow-x: hidden;
+    }
+    
+    .schedule-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 5px;
+      margin: 10px auto;
+      padding: 20px;
+    }
+    .table{
+        border: 0.1px solid rgba(0,0,0,0.1) !important;
+        white-space: nowrap;
+    }
+    caption {
+  caption-side: top;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        overflow-x: hidden;
+    }
+    .schedule-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 529px) {
+    .schedule-container{
+        grid-template-columns: 1fr;
+        overflow-x: scroll;
+    }
+}
+
+    /* Add additional CSS styling as desired */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="schedule-container">
+      <table class="table">
+        <caption>Monday to Friday</caption>
+        <thead class="thead-light">
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>6:00 AM</td>
+            <td>Wake up and freshen up</td>
+          </tr>
+          <tr>
+            <td>6:30 AM</td>
+            <td>Exercise or Physical Education</td>
+          </tr>
+          <tr>
+            <td>7:00 AM</td>
+            <td>School</td>
+          </tr>
+          <tr>
+            <td>2:00 PM</td>
+            <td>Return from school, have lunch</td>
+          </tr>
+          <tr>
+            <td>3:00 PM</td>
+            <td>Study - Accounts</td>
+          </tr>
+          <tr>
+            <td>4:30 PM</td>
+            <td>Break and snacks</td>
+          </tr>
+          <tr>
+            <td>4:45 PM</td>
+            <td>Study - Economics</td>
+          </tr>
+          <tr>
+            <td>6:00 PM</td>
+            <td>Break and relax</td>
+          </tr>
+          <tr>
+            <td>6:30 PM</td>
+            <td>Study - Business Studies</td>
+          </tr>
+          <tr>
+            <td>8:00 PM</td>
+            <td>Dinner break</td>
+          </tr>
+          <tr>
+            <td>8:30 PM</td>
+            <td>Study - English</td>
+          </tr>
+          <tr>
+            <td>9:30 PM</td>
+            <td>Study - Painting</td>
+          </tr>
+          <tr>
+            <td>10:30 PM</td>
+            <td>Learn new things (online courses, reading, etc.)</td>
+          </tr>
+          <tr>
+            <td>11:00 PM</td>
+            <td>Freelancing or personal projects</td>
+          </tr>
+          <tr>
+            <td>12:00 AM</td>
+            <td>Bedtime</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <table class="table">
+        <caption>Saturday</caption>
+        <thead class="thead-light">
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>6:00 AM</td>
+            <td>Wake up and freshen up</td>
+          </tr>
+          <tr>
+            <td>6:30 AM</td>
+            <td>Exercise or Physical Education</td>
+          </tr>
+          <tr>
+            <td>7:00 AM</td>
+            <td>School</td>
+          </tr>
+          <tr>
+            <td>12:00 PM</td>
+            <td>Return from school</td>
+          </tr>
+          <tr>
+            <td>1:00 PM</td>
+            <td>Study - Accounts</td>
+          </tr>
+          <tr>
+            <td>2:30 PM</td>
+            <td>Break and snacks</td>
+          </tr>
+          <tr>
+            <td>2:45 PM</td>
+            <td>Study - Economics</td>
+          </tr>
+          <tr>
+            <td>4:00 PM</td>
+            <td>Break and relax</td>
+          </tr>
+          <tr>
+            <td>4:30 PM</td>
+            <td>Study - Business Studies</td>
+          </tr>
+          <tr>
+            <td>6:00 PM</td>
+            <td>Dinner break</td>
+          </tr>
+          <tr>
+            <td>6:30 PM</td>
+            <td>Study - English</td>
+          </tr>
+          <tr>
+            <td>7:30 PM</td>
+            <td>Study - Painting</td>
+          </tr>
+          <tr>
+            <td>8:30 PM</td>
+            <td>Learn new things (online courses, reading, etc.)</td>
+          </tr>
+          <tr>
+            <td>9:30 PM</td>
+            <td>Freelancing or personal projects</td>
+          </tr>
+          <tr>
+            <td>11:00 PM</td>
+            <td>Bedtime</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <table class="table">
+        <caption>Sunday</caption>
+        <thead class="thead-light">
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>6:00 AM</td>
+            <td>Wake up and freshen up</td>
+          </tr>
+          <tr>
+            <td>6:30 AM</td>
+            <td>Exercise or Physical Education</td>
+          </tr>
+          <tr>
+            <td>9:00 AM</td>
+            <td>Learn new things (online courses, reading, etc.)</td>
+          </tr>
+          <tr>
+            <td>11:00 AM</td>
+            <td>Freelancing or personal projects</td>
+          </tr>
+          <tr>
+            <td>1:00 PM</td>
+            <td>Lunch break</td>
+          </tr>
+          <tr>
+            <td>2:00 PM</td>
+            <td>Relaxation and leisure activities</td>
+          </tr>
+          <tr>
+            <td>9:00 PM</td>
+            <td>Study planning for the upcoming week</td>
+          </tr>
+          <tr>
+            <td>10:00 PM</td>
+            <td>Bedtime</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table">
+        <caption>Manage Tasks/TO DO Lists</caption>
+        <thead class="thead-light">
+          <tr>
+            <th>Task</th>
+            <th>Completed</th>
+          </tr>
+        </thead>
+        <tbody id="todo-list">
+          <!-- Todo tasks will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+    <div class="modal fade" id="addTaskModal" tabindex="-1" role="dialog" aria-labelledby="addTaskModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="addTaskModalLabel">Add Task</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="add-task-form">
+                <div class="form-group">
+                  <label for="task-input">New Task:</label>
+                  <input type="text" class="form-control" id="task-input" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Task</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <button class="btn btn-primary" data-toggle="modal" data-target="#addTaskModal">Add New Task</button>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <script>
+    // Retrieve tasks from local storage
+    const storedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+    // Render stored tasks
+    renderTasks();
+
+    // Handle form submission
+    document.getElementById('add-task-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Get input value
+      const taskInput = document.getElementById('task-input');
+      const task = taskInput.value.trim();
+
+      if (task !== '') {
+        // Create new task object
+        const newTask = { task, completed: false };
+
+        // Add task to storedTasks array
+        storedTasks.push(newTask);
+
+        // Save updated tasks to local storage
+        saveTasks();
+
+        // Render tasks
+        renderTasks();
+
+        // Clear input field
+        taskInput.value = '';
+      }
+    });
+
+    // Handle checkbox click event (task completion)
+    document.getElementById('todo-list').addEventListener('change', function(event) {
+      const checkbox = event.target;
+      const taskId = checkbox.getAttribute('data-task-id');
+
+      // Update task completion status
+      storedTasks[taskId].completed = checkbox.checked;
+
+      // Save updated tasks to local storage
+      saveTasks();
+    });
+
+    // Render tasks in the table
+    function renderTasks() {
+      const todoList = document.getElementById('todo-list');
+      todoList.innerHTML = '';
+
+      for (let i = 0; i < storedTasks.length; i++) {
+        const task = storedTasks[i];
+
+        const row = document.createElement('tr');
+
+        const taskCell = document.createElement('td');
+        taskCell.textContent = task.task;
+        row.appendChild(taskCell);
+
+        const completedCell = document.createElement('td');
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.checked = task.completed;
+        checkbox.setAttribute('data-task-id', i);
+        completedCell.appendChild(checkbox);
+        row.appendChild(completedCell);
+
+        todoList.appendChild(row);
+      }
+    }
+
+    // Save tasks to local storage
+    function saveTasks() {
+      localStorage.setItem('tasks', JSON.stringify(storedTasks));
+    }
+  </script>
+</body>
+</html>
